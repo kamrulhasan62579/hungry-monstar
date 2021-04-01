@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monstar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Search and Button -->
+   <div class="first-div">
+    <form class="col-md-6 m-auto py-5">
+        <div class="input-group ">
+            <input id="meal" type="text" class="form-control" placeholder="Search By Meal Name ...">
+            <div class="input-group-append">
+                <button onclick="searchMeal()" type="button" class="btn btn-danger">Search</button>
+            </div>
+        </div>
+    </form>
+   </div>
+   <h3 style="text-align: center; color: rgb(255, 72, 52);">Choice Your Favourite Food</h3>
+
+   
+<!-- For Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2 style="text-align: center;">Try This Food</h2>
+        </header>
+        <div class="w3-container">
+        <p> 
+            <div  id="mealContainer">
+
+            </div>
+        </p>
+           
+        </div>
+        <footer class="w3-container w3-teal">
+            <p style="text-align: end; font-size: 14px;">|... M K Hasan...|</p>
+        </footer>
+        </div>
+    </div>
+
+
+<!-- Main Container -->
+   <div id="container">
+   </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

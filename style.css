@@ -1,0 +1,47 @@
+.first-div{
+    text-align: center;
+}
+.thumb{
+     height: 90px;
+     width: 135px;
+}
+#container{
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px 180px 173px 180px;
+   
+}
+.mealGrid{
+    border: 2px solid tomato;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px 5px rgb(248, 247, 247);
+   
+}
+.h6Decrease{
+    font-size: 12px;
+    text-align: center;
+}
+.lastShowContainer{
+    text-align:justify;
+    
+}
+.lastShowImage{
+    height: 300px;
+    width: 570px;
+}
+ul{
+    list-style:lower-roman;
+}
+.foodNameLastShow{
+    text-align: center;
+}
+.detailBtn{
+    height: 20px;
+    width: 100px;
+    position: relative;
+    left: 40px;
+    font-size: 10px;
+    color: blue;
+}
