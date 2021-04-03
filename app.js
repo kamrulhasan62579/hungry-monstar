@@ -7,8 +7,9 @@ const searchMeal = ()=> {
      })
 }
  const loadData = data => {
+   const container = document.getElementById('container');
+   container.innerHTML = '';
          data.meals.forEach(element => {
-            const container = document.getElementById('container');
             const mealDiv = document.createElement('div');
             mealDiv.className = 'mealGrid'
             mealDiv.innerHTML = `
